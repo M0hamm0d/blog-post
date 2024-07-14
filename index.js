@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 const displayDiv = document.querySelector('.on-click');
 let div = document.querySelector('.div')
+const topic = document.querySelector('.title')
 console.log(div);
 let card1 = {
     topic:'Qui est esse',
@@ -57,7 +58,7 @@ function render() {
     let postHTML = '';
     for (let i = 0; i < arrContainer.length; i++){
         let html =`
-        <button class="card" onclick="let res = arrContainer.slice(${i},${i +1});render();copy(); div.innerHTML = res[0].content ">
+        <button class="card" onclick="let res = arrContainer.slice(${i},${i +1});render();copy(); topic.innerHTML = res[0].topic; div.innerHTML = res[0].content">
             <h5>
                 ${arrContainer[i].topic}
             </h5>

@@ -58,6 +58,16 @@ body{
     padding: 20px;
     /* width: 100%;  */
     border: 1px solid white;
+    border-radius: 5px;
+}
+.full-view button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.full-view button svg{
+    width: 25px;
+    height: 25px;
 }
 .display button{
     border: none;
@@ -65,10 +75,16 @@ body{
     margin: 0 0 10px;
     width: 100%;
 }
-.div{
+.cont{
     border: 1px solid white;
     margin: auto 3px;
     padding: 5px;
-
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: #002B3D;
+    border-radius: 5px;
+}
+.cont div{
+    margin-top: 5px;
+    font-size: 16px;
 }
